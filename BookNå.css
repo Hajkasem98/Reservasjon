@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: burlywood;
+    font-size: 24px;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(141, 114, 93, 0.727);
+}
+
+.navbar h1{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 20px;
+}
+span{
+    color: white;
+}
+
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 20px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#ffff;
+    
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px black;
+    transition: 1s;
+    
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bekreftelse{
+    background: rgba(255,255,255,0.3);
+    width: 30vw;
+    border-radius: 20px;
+    padding: 32px;
+    margin: 30px;
+    text-align: center;
+
+}
+.bekreftelse h2 {
+    color: green;
+    margin-bottom: 12px;
+}
+.bekreftelse p{
+    padding-top: 20px;
+
+}
+
+@media(max-width: 992px){   
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .navbar h1{
+        font-size: 24px;
+        padding: 10px;
+    }
+    .navbar ul li {
+        font-size: 13px;
+    }
+    .bekreftelse{
+        font-size: 16px;
+        width: 320px;
+    }
+
+}
